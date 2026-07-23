@@ -26,3 +26,7 @@ cards.forEach((card) => {
     card.style.transition = "0.6s ease";
 
 });
+
+const cards = document.querySelectorAll(
+    ".skill-card, .project-card, .video-card, .contact-card, .mini-card"
+);

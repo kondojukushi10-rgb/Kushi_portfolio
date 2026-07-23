@@ -514,67 +514,339 @@ section{
     gap: 14px;
 }
 
+
+/*==========================
+PROJECT DEMOS
+==========================*/
+
+.project-showcase{
+    padding:40px 8% 80px;
+}
+
+.center{
+    text-align:center;
+}
+
+.center p{
+    max-width:700px;
+    margin:20px auto 0;
+    color:#666;
+    line-height:1.8;
+}
+
+.showcase-wrapper{
+    margin-top:70px;
+    display:flex;
+    flex-direction:column;
+    gap:70px;
+}
+
+.showcase-card{
+
+    display:grid;
+    grid-template-columns:58% 42%;
+    align-items:center;
+    gap:50px;
+
+}
+
+.showcase-card.reverse{
+
+    grid-template-columns:42% 58%;
+
+}
+
+.video-box{
+
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.video-box video{
+
+    width:100%;
+    aspect-ratio:16/9;
+    display:block;
+    object-fit:cover;
+    background:#000;
+
+}
+
+.project-info h3{
+
+    font-size:42px;
+    line-height:1.2;
+    margin:18px 0;
+
+}
+
+.project-info p{
+
+    color:#666;
+    line-height:1.9;
+    margin-bottom:25px;
+
+}
+
+.demo-tag{
+
+    display:inline-block;
+
+    background:#eef3ea;
+
+    color:#5d7d45;
+
+    padding:8px 18px;
+
+    border-radius:40px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.project-tech{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+
+    margin-bottom:30px;
+
+}
+
+.project-tech span{
+
+    background:#f3f6ef;
+
+    color:#5d7d45;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.project-btn{
+
+    display:inline-block;
+
+    padding:15px 28px;
+
+    background:#5d7d45;
+
+    color:white;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-btn:hover{
+
+    background:#486534;
+
+    transform:translateY(-3px);
+
+}
+
+.showcase-card:hover .video-box{
+
+    transform:scale(1.02);
+
+    transition:.35s;
+
+}
+
+@media(max-width:992px){
+
+.showcase-card,
+.showcase-card.reverse{
+
+grid-template-columns:1fr;
+
+}
+
+.showcase-card.reverse .project-info{
+
+order:2;
+
+}
+
+.showcase-card.reverse .video-box{
+
+order:1;
+
+}
+
+.project-info{
+
+text-align:center;
+
+}
+
+.project-tech{
+
+justify-content:center;
+
+}
+
+.project-info h3{
+
+font-size:32px;
+
+}
+
+}
+
+
+
+
 /* ================= CONTACT ================= */
+
+.contact{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
 
 .contact-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    margin-top: 60px;
+    margin-top: 0px;
 }
-
 .contact-card{
-    background: white;
-    padding: 45px 35px;
-    border-radius: 25px;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 22px;
     text-align: center;
     text-decoration: none;
     color: inherit;
 
-    transition: 0.35s ease;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+    transition: .35s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,.05);
 }
 
 .contact-card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-8px);
 }
 
 .contact-card i{
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
     background: #eef3ea;
     border-radius: 50%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    margin: 0 auto 25px;
+    margin:0 auto 18px;
 
-    font-size: 32px;
-    color: #5d7d45;
+    font-size:28px;
+    color:#5d7d45;
 
-    transition: 0.3s ease;
+    transition:.3s;
 }
 
 .contact-card:hover i{
-    background: #5d7d45;
-    color: white;
+    background:#5d7d45;
+    color:#fff;
 }
 
 .contact-card h3{
-    font-size: 30px;
-    margin-bottom: 15px;
-    color: #111;
+    font-size:22px;
+    margin-bottom:10px;
+    color:#111;
 }
 
 .contact-card p{
-    font-size: 18px;
-    line-height: 1.7;
-    color: #555;
-
-    word-break: break-word;
+    font-size:16px;
+    line-height:1.5;
+    color:#555;
+    word-break:break-word;
 }
+
+/* Resume Download */
+
+.resume-download{
+    margin-top:0px;
+}
+
+/* Card */
+
+.resume-content{
+
+    background:#fff;
+    border-radius:24px;
+    padding:35px 45px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.resume-text h3{
+
+    font-size:28px;
+    margin-bottom:8px;
+    color:#222;
+
+}
+
+.resume-text p{
+
+    color:#666;
+    font-size:16px;
+
+}
+
+.resume-btn{
+
+    background:#6b8f4e;
+    color:#fff;
+
+    padding:16px 34px;
+    border-radius:50px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.resume-btn:hover{
+
+    background:#56753e;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(107,143,78,.25);
+
+}
+
 
 /* ================= RESPONSIVE ================= */
 
